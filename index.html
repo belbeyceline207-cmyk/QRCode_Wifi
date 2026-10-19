@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi QR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wifi-card">
+        <h1>Wi-Fi QR Code</h1>
+        <p>Générez un QR Code pour vous connecter au Wi-Fi.</p>
+
+        <form id="wifiForm">
+            <label for="ssid">Nom du réseau Wi-Fi</label>
+            <input type="text" id="ssid" placeholder="Ex : MaBox_WiFi" required>
+
+            <label for="password">Mot de passe Wi-Fi</label>
+            <input type="password" id="password" placeholder="Entrez le mot de passe" required>
+
+            <button type="submit">Générer le QR Code</button>
+        </form>
+
+        <div id="qrcode"></div>
+
+        <button type="button" id="clearBtn" hidden>
+            Effacer le QR Code
+        </button>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
